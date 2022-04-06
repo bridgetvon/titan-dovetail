@@ -5,19 +5,19 @@ import Image from 'next/image'
 export default function Nav() {
     const [open, setOpen] = useState(false)
     return (
-        <nav className='flex bg-black items-center flex-wrap inline text-sm'>
+        <nav className='flex bg-white items-center flex-wrap inline text-sm border-b-2'>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-11/12 p-3 flex justify-end items-center">
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center lg:hidden" onClick={() => {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}
-                    <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
-                    <span className={`h-1 w-full bg-white rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
-                    <span className={`h-1 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
+                    <span className={`h-1 w-full bg-red rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+                    <span className={`h-1 w-full bg-red rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+                    <span className={`h-1 w-full bg-red rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
                 </div>
                 <div className="hidden w-full lg:inline-flex lg:flex-grow lg:w-auto text-red">
-                    <div className='lg:inline-flex lg:flex-row lg:ml-48 lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto border-b-2 border-white lg:m-auto'>
+                    <div className='lg:inline-flex lg:flex-row lg:ml-48 lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto lg:m-auto'>
                         <Link href='/' passHref>
                         <Image
                             src='/logo.png'
@@ -27,19 +27,19 @@ export default function Nav() {
                         />
                         </Link>
                         
-                        <span className='text-white pr-20 pl-5 mr-40 tracking-wide justify-start'>Titan Dovetail Systems</span>
+                        <span className='text-black ml-auto tracking-wide justify-start'>Titan Dovetail Systems</span>
                         <Link href='/#luxury-suites'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 text-red justify-end hover:text-white '>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 text-red justify-end mr-auto hover:text-black'>
                                 About Us
                             </a>
                         </Link>
                         <Link href='/#exclusive-clubs'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 justify-end hover:text-white'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 justify-end hover:text-black'>
                                 Shop
                             </a>
                         </Link>
                         <Link href='/#contact'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 justify-end hover:text-white'>
+                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 justify-end hover:text-black'>
                                 Contact us
                             </a>
                         </Link>
