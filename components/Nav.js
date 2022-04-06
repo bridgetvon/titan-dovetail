@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
+import backgroundImage from '../public/bg.jpg'
 
 export default function Nav() {
     const [open, setOpen] = useState(false)
     return (
-        <nav className='flex bg-white items-center flex-wrap inline text-sm border-b-2'>
+        <>
+        <nav className='flex items-center flex-wrap inline text-sm'>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-11/12 p-3 flex justify-end items-center">
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center lg:hidden" onClick={() => {
@@ -47,6 +49,12 @@ export default function Nav() {
                 </div>
             </div>
         </nav>
+
+    
+
+
+        </>
+        
 
     )
 }
