@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Photos from '../components/Photos'
 import Video from '../components/Video'
+import About from '../components/About'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Photos />
       <Video />
+      <About />
     </div>
   )
 }

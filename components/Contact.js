@@ -5,7 +5,7 @@ export default function Contact() {
         <div className='bg-darkGray text-black' id='contact'>
             <section className='flex flex-wrap p-1'>
                 <div className='w-2/5'>
-                    <h1 className='text-2xl font-bold p-8'>CONTACT US</h1>
+                    <h1 className='text-2xl font-bold p-8 text-red'>CONTACT US</h1>
                     <ul>
                         <li className='lg:p-4'>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black" strokeWidth="2">
