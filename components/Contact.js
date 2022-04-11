@@ -2,10 +2,11 @@
 
 export default function Contact() {
     return (
-        <div className='bg-darkGray text-black' id='contact'>
-            <section className='flex flex-wrap p-1'>
-                <div className='w-2/5'>
-                    <h1 className='text-2xl font-bold p-8 text-red'>CONTACT US</h1>
+        <div>
+        <h1 className='text-4xl p-4 text-center text-red font-bold mb-10'>CONTACT US</h1>
+
+        <div className='bg-darkGray text-black grid lg:grid-cols-2 flex flex-wrap justify-center' id='contact'>
+                <div className="mb-10">
                     <ul>
                         <li className='lg:p-4'>
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black" strokeWidth="2">
@@ -21,12 +22,11 @@ export default function Contact() {
                             <li className='lg:p-4'>
                                 dave@titandovetail.com
                             </li>
-                        <li className='w-30 text-xs p-4'></li>
                     </ul>
                 </div>
-                <div className='w-3/5 p-2'>
-                    <form className='w-full'>
-                        <div>
+                <div>
+                    <form>
+                        <div className="w-full">
                             <label htmlFor="name">Name:</label>
                             <input className='block rounded-sm w-full p-1 mt-1 border-2 border-black-500'
                                 type="text"
@@ -52,20 +52,20 @@ export default function Contact() {
                             <select className='block rounded-sm w-full p-1 mt-1 border-2 border-black-500 appearance-none'>
                                 <option>Customize</option>
                                 <option>Pricing</option>
-                                <option>Appointments</option>
+                                <option>Appointments/consultation</option>
                             </select>
                         </div>
                         <div>
                             <label htmlFor="message">Message:</label>
                             <textarea className='block rounded-sm w-full p-1 mt-1 border-2 border-black-500'
                                 name="message"
-                                rows="5"
+                                rows="3"
                             />
                         </div>
-                        <button className='mt-3 px-10 py-25 rounded-sm text-black bg-red '>Send</button>
+                        <button className='text-red border-2 p-3 rounded mt-6 mb-10 cursor-pointer'>Send</button>
                     </form>
                 </div>
-            </section>
+        </div>
         </div>
     );
 }

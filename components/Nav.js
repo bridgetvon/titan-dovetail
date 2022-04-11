@@ -10,7 +10,7 @@ export default function Nav() {
         <nav className='flex items-center flex-wrap inline text-sm'>
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-11/12 p-3 flex justify-end items-center">
-                <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center lg:hidden" onClick={() => {
+                <div className="flex z-50 w-8 h-8 flex-col justify-between items-center lg:hidden" onClick={() => {
                     setOpen(!open)
                 }}>
                     {/* hamburger button */}
@@ -30,24 +30,26 @@ export default function Nav() {
                         </Link>
                         
                         <span className='text-black ml-auto tracking-wide justify-start'>Titan Dovetail Systems</span>
-                        <Link href='/#luxury-suites'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 text-red justify-end mr-auto hover:text-black'>
-                                About Us
+                        </div>
+                        <div className='lg:inline-flex lg:flex-row lg:ml-48 lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto lg:m-auto'>
+                        <Link href='/#about'>
+                            <a className='lg:w-auto w-full px-3 py-2 text-red justify-end mr-auto hover:text-black'>
+                                About
                             </a>
                         </Link>
-                        <Link href='/#exclusive-clubs'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 justify-end hover:text-black'>
+                        <Link href='/#shop'>
+                            <a className='lg:w-auto w-full px-3 py-2 justify-end hover:text-black'>
                                 Shop
                             </a>
                         </Link>
                         <Link href='/#contact'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 justify-end hover:text-black'>
+                            <a className=' lg:w-auto w-full px-3 py-2 justify-end hover:text-black'>
                                 Contact us
                             </a>
                         </Link>
+                        </div>
                     </div>
                 </div>
-            </div>
         </nav>
 
     
@@ -65,13 +67,13 @@ function MobileNav({ open, setOpen }) {
             <div className="flex flex-col items-center text-white">
              
                 <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                    Luxury Suites
+                    About
                 </a>
                 
                 <a className="text-xl font-normal my-4" href="/contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                    Exclusive Clubs
+                    Shop
                 </a>
-                <a className="text-xl font-normal my-4" href="/contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                <a className="text-xl font-normal my-4" href="/shop" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     Contact
                 </a>
             </div>

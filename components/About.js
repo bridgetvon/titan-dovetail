@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div>
-            <h2 className='text-2xl p-4 text-center text-red font-bold'>About Us</h2>
-            <div className='grid place-items-center grid-cols-2 gap-4 p-4 mb-20'>
+        <div id='about'>
+            <h2 className='text-4xl p-4 text-center text-red font-bold'>About Us</h2>
+            <div className='grid place-items-center lg:grid-cols-2 gap-4 p-4 mb-10 flex-wrap'>
                 <div className="max-w-md rounded overflow-hidden shadow-lg">
                     <div className="p-6">
                         <div className="font-bold text-xl mb-2 text-red">Our History</div>
